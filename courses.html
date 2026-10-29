@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore computer courses at IT Kalat, including computer basics, office applications, design, and web development.">
+  <title>Computer Courses | IT Kalat</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="topbar">Take the next step in your digital learning journey.</div>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">IT</span>
+        <span>IT KALAT<small>LEARN · BUILD · GROW</small></span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation"
+        aria-expanded="false">☰</button>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="courses.html">Courses</a></li>
+          <li><a href="accessories.html">Accessories & Contact</a></li>
+          <li><a class="btn btn-primary" href="accessories.html#contact">Ask About Admission</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <span class="eyebrow">Learn new skills</span>
+        <h1>Our Computer Courses</h1>
+        <p>
+          Choose a learning path that matches your interests,
+          from computer fundamentals to creative and technical skills.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <input id="course-search" class="search-box" type="search"
+          placeholder="Search courses..." aria-label="Search courses">
+
+        <div class="filter-row" aria-label="Filter courses">
+          <button class="filter-btn active" data-course-filter="all">All Courses</button>
+          <button class="filter-btn" data-course-filter="beginner">Beginner</button>
+          <button class="filter-btn" data-course-filter="office">Office Skills</button>
+          <button class="filter-btn" data-course-filter="creative">Creative</button>
+          <button class="filter-btn" data-course-filter="technical">Technical</button>
+        </div>
+
+        <div class="card-grid course-grid" id="course-grid">
+
+          <article class="card course-card" data-category="beginner"
+            data-search="basic computer typing fundamentals">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=80"
+              alt="Computer learning">
+            <div class="card-body">
+              <span class="tag">Beginner</span>
+              <h3>Basic Computer</h3>
+              <p>Learn computer fundamentals, file management, typing, and safe computer use.</p>
+              <a class="card-link admission-link" data-course="Basic Computer"
+                href="accessories.html#contact">Ask About Admission →</a>
+            </div>
+          </article>
+
+          <article class="card course-card" data-category="office"
+            data-search="ms office word excel powerpoint">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=700&q=80"
+              alt="Office work on a desk">
+            <div class="card-body">
+              <span class="tag">Office Skills</span>
+              <h3>MS Office</h3>
+              <p>Explore Word documents, Excel spreadsheets, and PowerPoint presentations.</p>
+              <a class="card-link admission-link" data-course="MS Office"
+                href="accessories.html#contact">Ask About Admission →</a>
+            </div>
+          </article>
+
+          <article class="card course-card" data-category="creative"
+            data-search="graphic design creative visual graphics">
+            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=700&q=80"
+              alt="Graphic design work">
+            <div class="card-body">
+              <span class="tag">Creative</span>
+              <h3>Graphic Design</h3>
+              <p>Discover visual communication, design principles, and creative projects.</p>
+              <a class="card-link admission-link" data-course="Graphic Design"
+                href="accessories.html#contact">Ask About Admission →</a>
+            </div>
+          </article>
+
+          <article class="card course-card" data-category="technical"
+            data-search="web development html css website coding">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=700&q=80"
+              alt="Website design on a monitor">
+            <div class="card-body">
+              <span class="tag">Technical</span>
+              <h3>Web Development</h3>
+              <p>Start learning HTML, CSS, responsive layouts, and website fundamentals.</p>
+              <a class="card-link admission-link" data-course="Web Development"
+                href="accessories.html#contact">Ask About Admission →</a>
+            </div>
+          </article>
+
+          <article class="card course-card" data-category="technical"
+            data-search="computer hardware maintenance troubleshooting">
+            <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80"
+              alt="Computer hardware components">
+            <div class="card-body">
+              <span class="tag">Technical</span>
+              <h3>Computer Hardware</h3>
+              <p>Explore computer components, basic troubleshooting, and maintenance.</p>
+              <a class="card-link admission-link" data-course="Computer Hardware"
+                href="accessories.html#contact">Ask About Admission →</a>
+            </div>
+          </article>
+
+          <article class="card course-card" data-category="creative"
+            data-search="digital skills freelancing online work">
+            <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=700&q=80"
+              alt="Person working on a laptop">
+            <div class="card-body">
+              <span class="tag">Digital Skills</span>
+              <h3>Digital Skills & Freelancing</h3>
+              <p>Learn about online work, digital communication, and presenting your skills.</p>
+              <a class="card-link admission-link" data-course="Digital Skills and Freelancing"
+                href="accessories.html#contact">Ask About Admission →</a>
+            </div>
+          </article>
+
+          <p class="empty-state" id="course-empty" hidden>
+            No matching courses found. Try another search.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2>Need Help Choosing?</h2>
+            <p>Ask IT Kalat about course content, duration, fees, and admissions.</p>
+          </div>
+          <a class="btn btn-primary" href="accessories.html#contact">
+            Contact Us →
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>IT KALAT</h3>
+          <p>Computer learning and technology essentials.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Admissions</h3>
+          <p><a href="accessories.html#contact">Send an inquiry →</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © <span class="current-year"></span> IT Kalat. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

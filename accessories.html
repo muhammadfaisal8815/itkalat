@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore computer accessories and contact IT Kalat about products and computer training.">
+  <title>Accessories & Contact | IT Kalat</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="topbar">Computer learning and technology essentials in one place.</div>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">IT</span>
+        <span>IT KALAT<small>LEARN · BUILD · GROW</small></span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation"
+        aria-expanded="false">☰</button>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a class="active" href="accessories.html">Accessories & Contact</a></li>
+          <li><a class="btn btn-primary" href="#contact">Contact Us →</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <span class="eyebrow">IT Kalat Store</span>
+        <h1>Computer Accessories</h1>
+        <p>
+          Explore useful accessories for your computer setup.
+          Contact us to ask about current availability and prices.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Explore Our Products</h2>
+          <p>Sample products below can be replaced with your actual inventory.</p>
+        </div>
+
+        <input id="product-search" class="search-box" type="search"
+          placeholder="Search accessories..." aria-label="Search accessories">
+
+        <div class="card-grid product-grid" id="product-grid">
+
+          <article class="card product-card"
+            data-search="keyboard wired wireless typing">
+            <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=700&q=80"
+              alt="Computer keyboard">
+            <div class="card-body">
+              <span class="tag">Computer Essentials</span>
+              <h3>Computer Keyboard</h3>
+              <p>Keyboard options for everyday work and study.</p>
+              <p class="product-price">Ask for price</p>
+              <a class="btn btn-primary whatsapp-product"
+                data-product="Computer Keyboard" href="#contact">Ask on WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="card product-card"
+            data-search="mouse wireless wired computer">
+            <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=700&q=80"
+              alt="Computer mouse">
+            <div class="card-body">
+              <span class="tag">Computer Essentials</span>
+              <h3>Computer Mouse</h3>
+              <p>Explore mouse options for your computer setup.</p>
+              <p class="product-price">Ask for price</p>
+              <a class="btn btn-primary whatsapp-product"
+                data-product="Computer Mouse" href="#contact">Ask on WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="card product-card"
+            data-search="headphones headset audio computer">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80"
+              alt="Audio headphones">
+            <div class="card-body">
+              <span class="tag">Audio</span>
+              <h3>Headphones</h3>
+              <p>Audio accessories for learning and everyday use.</p>
+              <p class="product-price">Ask for price</p>
+              <a class="btn btn-primary whatsapp-product"
+                data-product="Headphones" href="#contact">Ask on WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="card product-card"
+            data-search="usb flash drive storage">
+            <img src="https://images.unsplash.com/photo-1618410320928-25228d811631?auto=format&fit=crop&w=700&q=80"
+              alt="USB storage device">
+            <div class="card-body">
+              <span class="tag">Storage</span>
+              <h3>USB Flash Drive</h3>
+              <p>Portable storage for files, documents, and study materials.</p>
+              <p class="product-price">Ask for price</p>
+              <a class="btn btn-primary whatsapp-product"
+                data-product="USB Flash Drive" href="#contact">Ask on WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="card product-card"
+            data-search="cable adapter computer connectivity">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80"
+              alt="Electronic accessories">
+            <div class="card-body">
+              <span class="tag">Connectivity</span>
+              <h3>Cables & Adapters</h3>
+              <p>Ask about compatible cables and connection accessories.</p>
+              <p class="product-price">Ask for price</p>
+              <a class="btn btn-primary whatsapp-product"
+                data-product="Cables and Adapters" href="#contact">Ask on WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="card product-card"
+            data-search="mouse pad desk computer accessories">
+            <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=700&q=80"
+              alt="Computer mouse and desk accessories">
+            <div class="card-body">
+              <span class="tag">Desk Setup</span>
+              <h3>Mouse Pad</h3>
+              <p>A practical accessory for your everyday computer workspace.</p>
+              <p class="product-price">Ask for price</p>
+              <a class="btn btn-primary whatsapp-product"
+                data-product="Mouse Pad" href="#contact">Ask on WhatsApp</a>
+            </div>
+          </article>
+
+          <p class="empty-state" id="product-empty" hidden>
+            No matching products found. Try another search.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Get in touch</span>
+          <h2>Contact IT Kalat</h2>
+          <p>Ask about our computer courses, admissions, or available accessories.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-panel">
+            <h2>Let's Talk</h2>
+            <p style="color:#CBD5E1; margin-top:8px">
+              We welcome inquiries from students and customers.
+            </p>
+
+            <div class="contact-item">
+              <span>📍</span>
+              <div>
+                <strong>Our Location</strong>
+                <span>IT Kalat, Kalat, Balochistan, Pakistan</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span>📱</span>
+              <div>
+                <strong>Phone / WhatsApp</strong>
+                <span>Add your business phone number in script.js</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span>🕒</span>
+              <div>
+                <strong>Opening Hours</strong>
+                <span>Add your actual business hours here.</span>
+              </div>
+            </div>
+
+            <div style="margin-top:28px">
+              <a class="btn btn-primary whatsapp-general"
+                href="#contact">Message Us on WhatsApp →</a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <h2 style="margin-bottom:20px">Send an Inquiry</h2>
+
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input id="name" name="name" type="text"
+                placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input id="phone" name="phone" type="tel"
+                placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+              <label for="interest">I am interested in</label>
+              <select id="interest" name="interest" required>
+                <option value="">Select an option</option>
+                <option>Computer Courses</option>
+                <option>Course Admission</option>
+                <option>Computer Accessories</option>
+                <option>Other Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message"
+                placeholder="How can we help you?" required></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit">
+              Send Inquiry on WhatsApp →
+            </button>
+            <p style="font-size:12px;color:#64748B;margin-top:12px">
+              Your message will open in WhatsApp for you to review and send.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>IT KALAT</h3>
+          <p>Computer education and technology essentials.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="accessories.html">Accessories & Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>Questions about courses or products?</p>
+          <p><a href="#contact">Send an inquiry →</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © <span class="current-year"></span> IT Kalat. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
